@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>Document</title>
+
+</head>
+<style>
+     @font-face {
+        font-family: reo;
+        src: url(./NBInternationalProBoo\ \(1\).ttf);
+    }
+
+    @font-face {
+        font-family: reo1;
+        src: url(./Rejouice-Headline\ \(1\).ttf);
+    }
+
+    * {
+        
+        font-family: reo1;
+       
+    }
+
+    *::selection {
+        background-color: rgb(252, 164, 154);
+    }
+
+    body[theme="black"] {
+        background-color: black;
+    }
+
+    body[theme="black"] .section {
+        color: rgb(255, 255, 255);
+    }
+
+    body[theme="cyan"] {
+        background-color: #F1F2F1;
+    }
+
+    body[theme="cyan"] .section {
+        color: #184350;
+    }
+
+    body[theme="salmon"] {
+        background-color: #EE9D71;
+    }
+
+    body[theme="salmon"] {
+        color: rgb(94, 50, 45);
+    }
+
+    body[theme="white"] {
+        background-color: white;
+    }
+
+    body[theme="white"] {
+        color: rgb(71, 71, 71);
+    }
+
+    body {
+        transition: background-color ease-in-out .5s;
+    }
+
+    .vdodiv {
+        clip-path: circle(var(--clip)at 50% 50%);
+    }
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+</style>
+
+<body theme="black">
+    <div class="main w-full">
+
+
+
+
+        <nav class=" border-gray-200 bg-transparent " 
+        style=" background-image: url('https://images.unsplash.com/photo-1558346648-9757f2fa4474?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); background-size: cover; background-position: center; filter: brightness(1);">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <img src="https://images.pexels.com/photos/326900/pexels-photo-326900.jpeg?auto=compress&cs=tinysrgb&w=800"
+                        class="h-7 w-10 object-cover object-right rounded-full" alt="Flowbite Logo" />
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap ">Adhunik WoodPecker</span>
+                </a>
+
+                <button data-collapse-toggle="navbar-multi-level" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200  aria-controls="
+                    navbar-multi-level" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+                <div class="hidden w-full md:block md:w-auto" id="navbar-multi-level">
+                    <ul
+                        class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0   ">
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3  bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
+                                aria-current="page">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0  md:dark:hover:text-blue-500  dark:hover:text-white md:dark:hover:bg-transparent">About
+                                Us</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0  md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Kitchen</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0  md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+                                TV Unit Design</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0  md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Wardrobe</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0  md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Our
+                                Services</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0  md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Gallery</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0  md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0  md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact
+                                us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+
+        <div data-color="cyan" class="home section w-full h-[100vh] relative ">
+            <div class="w-full sticky top-0 left-0">
+                <div class="btmtext absolute bottom-[7%] z-[4] w-52 left-[3%]">
+                    <h1>
+                        We build big ideas. <br>Interiors . Design Ideas
+                        . <br> For real people. Real
+                        lives.
+                    </h1>
+                </div>
+                <div style="--clip:100%"
+                    class=" z-[3] vdodiv w-full h-screen absolute top-0 left-0 bg-black overflow-hidden">
+                    <video muted autoplay loop
+                        class="absolute w-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                        src="./Modern Interior Design Ideas Video.mp4"></video>
+                </div>
+
+                <div class="marqueesContainer w-full h-screen relative overflow-hidden">
+                    <div class="heading absolute top-[7%] left-1/2 -translate-x-1/2">
+                        <h1 class="text-xl font-regular w-60 text-center">
+                            Crafting a new paradigm of Interiors, one that is
+                        </h1>
+                    </div>
+                    <div class="slidesm w-[90%] scale-[1] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 ">
+                        <div class="row lft -translate-x-1/2 w-full flex items-center gap-10 mb-2 whitespace-nowrap">
+                            <div class="elem flex items-center gap-8">
+                                <h1 class="font-semibold font-['Pp Neue Machina'] text-5xl">
+                                    TV Unit Design
+                                </h1>
+                                <div class="imgdiv w-[3.5rem] h-[3.5rem] bg-yellow-500 overflow-hidden rounded-full">
+                                    <img class="h-full w-full object-cover"
+                                        src="https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&w=800"
+                                        alt="" />
+                                </div>
+                            </div>
+                            <div class="elem flex items-center gap-8">
+                                <h1 class="font-semibold font-['Pp Neue Machina'] text-5xl">
+                                    Kitchen
+                                </h1>
+                                <div class="imgdiv w-[3.5rem] h-[3.5rem] bg-yellow-500 overflow-hidden rounded-full">
+                                    <img class="h-full w-full object-cover"
+                                        src="https://images.pexels.com/photos/3037434/pexels-photo-3037434.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+                                        alt="" />
+                                </div>
+                            </div>
+                            <div class="elem flex items-center gap-8">
+                                <h1 class="font-semibold font-['Pp Neue Machina'] text-5xl">
+                                    Wardrobe
+                                </h1>
+                                <div class="imgdiv w-[3.5rem] h-[3.5rem] bg-yellow-500 overflow-hidden rounded-full">
+                                    <img class="h-full w-full object-cover"
+                                        src="https://images.pexels.com/photos/2480425/pexels-photo-2480425.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+                                        alt="" />
+                                </div>
+                            </div>
+                            <div class="elem flex items-center gap-8">
+                                <h1 class="font-semibold font-['Pp Neue Machina'] text-5xl">
+                                    U-Shaped Kitchen
+                                </h1>
+                                <div class="imgdiv w-[3.5rem] h-[3.5rem] bg-yellow-500 overflow-hidden rounded-full">
+                                    <img class="h-full w-full object-cover"
+                                        src="https://images.pexels.com/photos/2480425/pexels-photo-2480425.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+                                        alt="" />
+                                </div>
+                            </div>
+                            <div class="elem flex items-center gap-8">
+                                <h1 class="font-semibold font-['Pp Neue Machina'] text-5xl">
+                                    L-Shape Kitchen
+                                </h1>
+                                <div class="imgdiv w-[3.5rem] h-[3.5rem] bg-yellow-500 overflow-hidden rounded-full">
+                                    <img class="h-full w-full object-cover"
+                                        src="https://images.pexels.com/photos/2480425/pexels-photo-2480425.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+                                        alt="" />
+                                </div>
+                            </div>
+                            <div class="elem flex items-center gap-8">
+                                <h1 class="font-semibold font-['Pp Neue Machina'] text-5xl">
+                                    Island Kitchens
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="row rgt -translate-x-1/3 w-full flex items-center gap-10 mb-2 whitespace-nowrap">
+                            <div class="elem flex items-center gap-8">
+                                <h1 class="font-semibold font-['Pp Neue Machina'] text-5xl">
+                                    U-Shaped Kitchen
+                                </h1>
+                                <div class="imgdiv w-[3.5rem] h-[3.5rem] bg-yellow-500 overflow-hidden rounded-full">
+                                    <img class="h-full w-full object-cover"
+                                        src="https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&w=800"
+                                        alt="" />
+                                </div>
+                            </div>
+                            <div class="elem flex items-center gap-8">
+                                <h1 class="font-semibold font-['Pp Neue Machina'] text-5xl">
+                                    L-Shape Kitchen
+                                </h1>
+                                <div class="imgdiv w-[3.5rem] h-[3.5rem] bg-yellow-500 overflow-hidden rounded-full">
+                                    <img class="h-full w-full object-cover"
+                                        src="https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&w=800"
+                                        alt="" />
+                                </div>
+                            </div>
+                            <div class="elem flex items-center gap-8">
+                                <h1 class="font-semibold font-['Pp Neue Machina'] text-5xl">
+                                    Island Kitchens
+                                </h1>
+                                <div class="imgdiv w-[3.5rem] h-[3.5rem] bg-yellow-500 overflow-hidden rounded-full">
+                                    <img class="h-full w-full object-cover"
+                                        src="https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&w=800"
+                                        alt="" />
+                                </div>
+                            </div>
+                            <div class="elem flex items-center gap-8">
+                                <h1 class="font-semibold font-['Pp Neue Machina'] text-5xl">
+                                    Indian Kitchens
+                                </h1>
+                                <div class="imgdiv w-[3.5rem] h-[3.5rem] bg-yellow-500 overflow-hidden rounded-full">
+                                    <img class="h-full w-full object-cover"
+                                        src="https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&w=800"
+                                        alt="" />
+                                </div>
+                            </div>
+                            <div class="elem flex items-center gap-8">
+                                <h1 class="font-semibold font-['Pp Neue Machina'] text-5xl">
+                                    Cabinet Designs
+                                </h1>
+                                <div class="imgdiv w-[3.5rem] h-[3.5rem] bg-yellow-500 overflow-hidden rounded-full">
+                                    <img class="h-full w-full object-cover"
+                                        src="https://images.pexels.com/photos/914388/pexels-photo-914388.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+                                        alt="" />
+                                </div>
+                            </div>
+                            <div class="elem flex items-center gap-8">
+                                <h1 class="font-semibold font-['Pp Neue Machina'] text-5xl">
+                                    Parallel Kitchens
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="row lft -translate-x-2/3 w-full flex items-center gap-10 mb-2 whitespace-nowrap">
+                            <div class="elem flex items-center gap-8">
+                                <h1 class="font-semibold font-['Pp Neue Machina'] text-5xl">
+                                    Sliding Door Wardrobe
+                                </h1>
+                                <div class="imgdiv w-[3.5rem] h-[3.5rem] bg-yellow-500 overflow-hidden rounded-full">
+                                    <img class="h-full w-full object-cover"
+                                        src="https://images.pexels.com/photos/914388/pexels-photo-914388.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+                                        alt="" />
+                                </div>
+                            </div>
+                            <div class="elem flex items-center gap-8">
+                                <h1 class="font-semibold font-['Pp Neue Machina'] text-5xl">
+                                    Mirror Wardrobe
+                                </h1>
+                                <div class="imgdiv w-[3.5rem] h-[3.5rem] bg-yellow-500 overflow-hidden rounded-full">
+                                    <img class="h-full w-full object-cover"
+                                        src="https://images.pexels.com/photos/914388/pexels-photo-914388.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+                                        alt="" />
+                                </div>
+                            </div>
+                            <div class="elem flex items-center gap-8">
+                                <h1 class="font-semibold font-['Pp Neue Machina'] text-5xl">
+                                    Walk in Wardrobe
+                                </h1>
+                                <div class="imgdiv w-[3.5rem] h-[3.5rem] bg-yellow-500 overflow-hidden rounded-full">
+                                    <img class="h-full w-full object-cover"
+                                        src="https://images.pexels.com/photos/914388/pexels-photo-914388.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+                                        alt="" />
+                                </div>
+                            </div>
+                            <div class="elem flex items-center gap-8">
+                                <h1 class="font-semibold font-['Pp Neue Machina'] text-5xl">
+                                    Open Wooden Storage
+                                </h1>
+                                <div class="imgdiv w-[3.5rem] h-[3.5rem] bg-yellow-500 overflow-hidden rounded-full">
+                                    <img class="h-full w-full object-cover"
+                                        src="https://images.pexels.com/photos/914388/pexels-photo-914388.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+                                        alt="" />
+                                </div>
+                            </div>
+                            <div class="elem flex items-center gap-8">
+                                <h1 class="font-semibold font-['Pp Neue Machina'] text-5xl">
+                                    Multicoloured Drawer
+                                </h1>
+                                <div class="imgdiv w-[3.5rem] h-[3.5rem] bg-yellow-500 overflow-hidden rounded-full">
+                                    <img class="h-full w-full object-cover"
+                                        src="https://images.pexels.com/photos/2067638/pexels-photo-2067638.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+                                        alt="" />
+                                </div>
+                            </div>
+                            <div class="elem flex items-center gap-8">
+                                <h1 class="font-semibold font-['Pp Neue Machina'] text-5xl">
+                                    Integrated Study Table
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="row rgt -translate-x-3/4 w-full flex items-center gap-10  whitespace-nowrap">
+                            <div class="elem flex items-center gap-8">
+                                <h1 class="font-semibold font-['Pp Neue Machina'] text-5xl">
+                                    Wall-Mounted
+                                </h1>
+                                <div class="imgdiv w-[3.5rem] h-[3.5rem] bg-yellow-500 overflow-hidden rounded-full">
+                                    <img class="h-full w-full object-cover"
+                                        src="https://images.pexels.com/photos/2067638/pexels-photo-2067638.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+                                        alt="" />
+                                </div>
+                            </div>
+                            <div class="elem flex items-center gap-8">
+                                <h1 class="font-semibold font-['Pp Neue Machina'] text-5xl">
+                                    TV Unit Design
+                                </h1>
+                                <div class="imgdiv w-[3.5rem] h-[3.5rem] bg-yellow-500 overflow-hidden rounded-full">
+                                    <img class="h-full w-full object-cover"
+                                        src="https://images.pexels.com/photos/2067638/pexels-photo-2067638.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+                                        alt="" />
+                                </div>
+                            </div>
+                            <div class="elem flex items-center gap-8">
+                                <h1 class="font-semibold font-['Pp Neue Machina'] text-5xl">
+                                    Open Wooden Unit TV Unit Design
+                                </h1>
+                                <div class="imgdiv w-[3.5rem] h-[3.5rem] bg-yellow-500 overflow-hidden rounded-full">
+                                    <img class="h-full w-full object-cover"
+                                        src="https://images.pexels.com/photos/2067638/pexels-photo-2067638.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+                                        alt="" />
+                                </div>
+                            </div>
+                            <div class="elem flex items-center gap-8">
+                                <h1 class="font-semibold font-['Pp Neue Machina'] text-5xl">
+                                    Modern Blue And Dark Wood TV Unit Design With Cabinet Storage
+                                </h1>
+                                <div class="imgdiv w-[3.5rem] h-[3.5rem] bg-yellow-500 overflow-hidden rounded-full">
+                                    <img class="h-full w-full object-cover"
+                                        src="https://images.pexels.com/photos/2067638/pexels-photo-2067638.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+                                        alt="" />
+                                </div>
+                            </div>
+                            <div class="elem flex items-center gap-8">
+                                <h1 class="font-semibold font-['Pp Neue Machina'] text-5xl">
+                                    useful
+                                </h1>
+                                <div class="imgdiv w-[3.5rem] h-[3.5rem] bg-yellow-500 overflow-hidden rounded-full">
+                                    <img class="h-full w-full object-cover"
+                                        src="https://images.pexels.com/photos/2067638/pexels-photo-2067638.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+                                        alt="" />
+                                </div>
+                            </div>
+                            <div class="elem flex items-center gap-8">
+                                <h1 class="font-semibold font-['Pp Neue Machina'] text-5xl">
+                                    intuitive
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="w-screen h-screen flex ">
+
+            <div class="h-full w-5/12  "
+            style=" background-image: url('https://images.pexels.com/photos/7602820/pexels-photo-7602820.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load'); background-size: cover; background-position: center; filter: brightness(0.9);" >
+                <h1 class="font-semibold text-6xl my-[10%] text-center ">
+                    We Make Your <br><span class="text-cyan-900">Home</span> Better
+                </h1>
+                <p class="text-left w-[60%] mx-auto text-1xl font-normal">
+                    We are taking care of the thousands of small details necessary to build a unique home specifically for
+                    your lifestyle.
+                </p>
+                <button class="bg-[#184350] py-3 px-9 mx-[20%] text-white my-[4%]">
+                    Read More
+                </button>
+                <div class="row flex text-center mt-9">
+                    <div class="h-[30%] w-6/12">
+    
+                        <h1 class="text-2xl">DURABILITY</h1>
+                        <p class="text-sm ">Lasting 10 Years</p>
+                    </div>
+                    <div class="h-[30%] w-6/12">
+                        <h1 class="text-2xl">MODERN INTERIOR</h1>
+                        <p>Exclusive 10 year warrantly</p>
+                    </div>
+    
+                </div>
+            </div>
+            <div class="h-full w-7/12">
+                <div class="swiper mySwiper ">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img class="w-full w-full object-cover object-left
+                        " src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800"
+                                alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="w-full w-full object-cover object-right
+                        " src="https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=800"
+                                alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="w-full w-full object-cover object-left
+                        " src="https://images.pexels.com/photos/1080696/pexels-photo-1080696.jpeg?auto=compress&cs=tinysrgb&w=800"
+                                alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="w-full w-full object-cover object-left "
+                                src="https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=800"
+                                alt="">
+                        </div>
+    
+                    </div>
+    
+                </div>
+            </div>
+    
+        </div>
+        <div data-color="cyan"
+            class="craft section w-full flex gap-10 justify-between px-10 py-10 relative items-start"   style=" background-image: url('https://images.unsplash.com/photo-1547104442-044448b73426?q=80&w=2835&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); background-size: cover; background-position: center; filter: brightness(0.9);">
+            <div class="ltext w-[40%] sticky top-0 left-0 p-5 rounded-xl"   style=" background-image: url('https://images.unsplash.com/photo-1547104442-044448b73426?q=80&w=2835&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); background-size: cover; background-position: center; filter: brightness(0.9);">
+                <p class="text-2xl font-light leading-[3rem]">
+                    where innovation meets elegance in the realm of interior design. Nestled at the
+intersection of modernity and timeless craftsmanship, we are dedicated to crafting spaces that resonate with sophistication
+and functionality.
+                </p>
+                <h1 class="text-[2rem]  mt-20 font-['Pp Neue Machina'] mb-10">
+                    We Craft Human-Centric <br>  Interior Design Sensibilities
+                </h1>
+                <div class="py-5 px-10 w-fit border border-red-500">
+                    <div class="masker overflow-hidden">
+                        <span class="inline-block "> Our Solutions </span>
+                    </div>
+                </div>
+            </div>
+            <div class="cards w-1/2" >
+                <h1 class="text-2xl text-left " style="font-weight: 100;  font-family: reo !important;
+                ">
+                    Welcome to Adhunik Woodpecker, where innovation meets elegance in the realm of interior design.
+                    Nestled at the  intersection of modernity and timeless craftsmanship, we are dedicated to
+                    crafting spaces that resonate with sophistication  and functionality.  With a keen eye for
+                    detail and a passion for excellence, we specialize in creating bespoke interiors that seamlessly
+                    blend  form and function, elevating every environment into a  masterpiece of design. 
+                    Step into a world where each space tells a unique story, tailored  to reflect the individuality
+                    and style of our discerning clients. At Adhunik Woodpecker, we are committed to transforming your
+                    vision into reality, one exquisite detail at a time
+                </h1>
+
+
+                <!-- <div class="px-auto py-auto mt-9">
+                    <img class="h-full w-full"
+                        src="https://images.pexels.com/photos/1643384/pexels-photo-1643384.jpeg?auto=compress&cs=tinysrgb&w=800"
+                        alt="">
+                </div>
+                <div class="px-auto py-auto mt-9">
+                    <img class="h-full w-full"
+                        src="https://images.pexels.com/photos/8146160/pexels-photo-8146160.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+                        alt="">
+                </div>
+                <div class="px-auto py-auto mt-9">
+                    <img class="h-full w-full"
+                        src="https://images.pexels.com/photos/6636262/pexels-photo-6636262.jpeg?auto=compress&cs=tinysrgb&w=800"
+                        alt="">
+                </div> -->
+            </div>
+        </div>
+
+        <div class="w-full h-[240px] flex justify-evenly p-[5%]">
+<div class=" h-12 w-[20%]">
+   <span></span> ALL-ROUND SERVICE
+    <p>Our professionals handle everything for you, from modular kitchen design to installation.</p>
+</div>
+<div class=" h-12 w-[20%]">
+    PREMIER EXPERIENCE
+    <p>A distinct customer-centric strategy that guarantees an effortless kitchen design process unlike any other.</p>
+</div>
+<div class=" h-12 w-[20%]">
+    4-WEEK DELIVERY
+    <p>We make it feasible via breakthroughs in design, manufacture, and supply.</p>
+</div>
+<div class=" h-12 w-[20%]">
+    10-YEARS WARRANTY
+    <p>Offering you a 10-year warranty</p>
+</div>
+        </div>
+        <!-- <div data-color="cyan" class="real section w-full">
+            <div class="cont h-[400vh]  relative">
+                <div class="slides overflow-hidden sticky top-0 left-0 flex w-full h-[100vh] gap-10">
+                    <div class="slide flex items-center justify-center w-full h-screen flex-shrink-0 ">
+                        <div class="text">
+                            <h1 class="text-5xl">Real Talk,</h1>
+                            <h1 class="text-5xl"> Real Impact</h1>
+                        </div>
+                        <div
+                            class="image overflow-hidden absolute top-1/2 -translate-y-1/2 rounded-full translate-x-1/2 right-0 w-[25rem] h-[25rem] ">
+                            <img class="h-full w-full object-cover"
+                                src="https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="slide w-full h-screen flex justify-center items-center flex-shrink-0 relative">
+                        <div
+                            class="img1 w-[10rem] rounded-full overflow-hidden h-[10rem] absolute  left-[15%] top-2/3 z-[3] -translate-y-1/3 -translate-x-1/3">
+                            <img class="w-full h-full object-cover "
+                                src="https://images.pexels.com/photos/8236023/pexels-photo-8236023.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+                                alt="">
+                        </div>
+                        <div
+                            class="img1 w-[20rem] rounded-full overflow-hidden h-[20rem] absolute  left-1/2 top-0 z-[3] -translate-y-1/2">
+                            <img class="w-full h-full object-cover "
+                                src="https://images.pexels.com/photos/1571458/pexels-photo-1571458.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+                                alt="">
+                        </div>
+                        <div
+                            class="image overflow-hidden absolute top-1/2 -translate-y-1/2 rounded-full translate-x-1/2 right-0 w-[25rem] h-[25rem] ">
+                            <img class="h-full w-full object-cover"
+                                src="https://images.pexels.com/photos/7018389/pexels-photo-7018389.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+                                alt="">
+                        </div>
+                        <div class="w-[60%]  text-center relative">
+                            <h3
+                                class="w-1/3 text-left font-semibold text-[1.3rem] leading-7 tracking-tight  absolute top-0 left-0 -translate-y-1/2 -translate-x-1/3 ">
+                                We’re on a mission to impact as many lives as possible and build a better company while
+                                we do it. Here’s our progress.</h3>
+                            <h1 class="font-semibold text-[12rem] leading-none text-white">20.4M</h1>
+                            <h3 class="text-5xl leading-none tracking-tight">Real people — real lives — we have built
+                                products and solutions for.</h3>
+                        </div>
+                    </div>
+                    <div class="slide w-full h-screen flex-shrink-0 flex items-center justify-center relative">
+                        <img class="w-60 absolute top-0  left-1/2 -translate-x-1/2"
+                            src="https://images.pexels.com/photos/1090638/pexels-photo-1090638.jpeg?auto=compress&cs=tinysrgb&w=800"
+                            alt="">
+                        <div class="w-[60%]  text-center relative">
+                            <h3
+                                class="w-1/3 text-left font-semibold text-[1.3rem] leading-7 tracking-tight  absolute top-0 left-0 -translate-y-1/2 -translate-x-1/3 ">
+                                Our team is global and diverse, because our individual experiences make us stronger.
+                            </h3>
+                            <h1 class="font-semibold text-[12rem] leading-none text-white">49%</h1>
+                            <h3 class="text-5xl leading-none tracking-tight">Expert Women in Tech.</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+
+
+    </div>
+   
+    <!-- Footer container -->
+    <footer class="bg-[#F3F3F3] text-center text-surface/75   lg:text-left "  style=" background-image: url('https://images.unsplash.com/photo-1556557753-4d7eb13e06c4?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D'); background-size: fill; background-position: center; filter: brightness(0.8);" >
+        <!-- <div
+            class="flex items-center justify-center border-b-2 border-neutral-200 p-6 dark:border-white/10 lg:justify-between">
+            <div class="me-12 hidden lg:block">
+                <span>Get connected with us on social networks:</span>
+            </div>
+         
+            <div class="flex justify-center">
+                <a href="#!" class="me-6 [&>svg]:h-4 [&>svg]:w-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 320 512">
+                    
+                        <path
+                            d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z" />
+                    </svg>
+                </a>
+                <a href="#!" class="me-6 [&>svg]:h-4 [&>svg]:w-4 ">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 512 512">
+                      
+                        <path
+                            d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+                    </svg>
+                </a>
+                <a href="#!" class="me-6 [&>svg]:h-4 [&>svg]:w-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 488 512">
+                      
+                        <path
+                            d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z" />
+                    </svg>
+                </a>
+                <a href="#!" class="me-6 [&>svg]:h-4 [&>svg]:w-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 448 512">
+                      
+                        <path
+                            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                    </svg>
+                </a>
+                <a href="#!" class="me-6 [&>svg]:h-4 [&>svg]:w-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 448 512">
+                      
+                        <path
+                            d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z" />
+                    </svg>
+                </a>
+              
+            </div>
+        </div> -->
+
+      
+        <div class="mx-6 py-10 text-center md:text-left">
+            <div class="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+                <!-- TW Elements section -->
+                <div class="">
+                    <h6 class="mb-4 flex items-center justify-center font-semibold uppercase md:justify-start">
+                        <span class="me-3 [&>svg]:h-4 [&>svg]:w-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12.378 1.602a.75.75 0 00-.756 0L3 6.632l9 5.25 9-5.25-8.622-5.03zM21.75 7.93l-9 5.25v9l8.628-5.032a.75.75 0 00.372-.648V7.93zM11.25 22.18v-9l-9-5.25v8.57a.75.75 0 00.372.648l8.628 5.033z" />
+                            </svg>
+                        </span>
+                        Adhunik WoodPecker
+                    </h6>
+                    <p>
+                        The Adhunik WoodPecker is driven by the principles of creativity, originality, consideration and enthusiasm.
+                    </p>
+                </div>
+                <!-- Products section -->
+                <div>
+                    <h6 class="mb-4 flex justify-center font-semibold uppercase md:justify-start">
+                        INFORMATIONS
+
+                    </h6>
+                  
+                    <p class="mb-4 flex items-center justify-center md:justify-start">
+                        <span class="me-3 [&>svg]:h-5 [&>svg]:w-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M11.47 3.84a.75.75 0 011.06 0l8.69 8.69a.75.75 0 101.06-1.06l-8.689-8.69a2.25 2.25 0 00-3.182 0l-8.69 8.69a.75.75 0 001.061 1.06l8.69-8.69z" />
+                                <path
+                                    d="M12 5.432l8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 01-.75-.75v-4.5a.75.75 0 00-.75-.75h-3a.75.75 0 00-.75.75V21a.75.75 0 01-.75.75H5.625a1.875 1.875 0 01-1.875-1.875v-6.198a2.29 2.29 0 00.091-.086L12 5.43z" />
+                            </svg>
+                        </span>
+                        DCG1-0102, Tower-1, DLF CORPORATE GREENS, Sector 74A, Gurugram, Haryana 122004
+                    </p>
+                    <p class="mb-4 flex items-center justify-center md:justify-start">
+                        <span class="me-3 [&>svg]:h-5 [&>svg]:w-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                        08287885885
+                    </p>
+                    <p class="mb-4 flex items-center justify-center md:justify-start">
+                        <span class="me-3 [&>svg]:h-5 [&>svg]:w-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
+                                <path
+                                    d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
+                            </svg>
+                        </span>
+                     adhunikcooling.com
+                    </p>
+                    <p class="mb-4 flex items-center justify-center md:justify-start">
+                        <span class="me-3 [&>svg]:h-5 [&>svg]:w-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                        Mon-Sat: 09:30 - 18:00
+                    </p>
+                  
+                </div>
+                <!-- Useful links section -->
+                <div>
+                    <h6 class="mb-4 flex justify-center font-semibold uppercase md:justify-start">
+                        USEFUL INFORMATION
+                    </h6>
+                    <p class="mb-4">
+                        <a href="#!">
+                            Architecture</a>
+                    </p>
+                    <p class="mb-4">
+                        <a href="#!">
+                            Commercial</a>
+                    </p>
+                    <p class="mb-4">
+                        <a href="#!">
+                            Residential</a>
+                    </p>
+                   
+                </div>
+                <!-- Contact section -->
+                <div class="justify-center  ">
+                    <h6 class="mb-4 flex justify-center font-semibold uppercase md:justify-start">
+                        Get connected with us <br> on social networks:
+                    </h6>
+                   
+                    <p class="mb-4 flex items-center justify-center md:justify-start mx-auto">
+                        <a href="#!" class="me-6 [&>svg]:h-4 [&>svg]:w-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 320 512">
+                                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+                                <path
+                                    d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z" />
+                            </svg>
+                        </a>
+                   
+                    </p>
+                    <p class="mb-4 flex items-center justify-center md:justify-start">
+                        <a href="#!" class="me-6 [&>svg]:h-4 [&>svg]:w-4 ">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 512 512">
+                                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+                                <path
+                                    d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+                            </svg>
+                        </a>
+                    </p>
+                    <p class="mb-4 flex items-center justify-center md:justify-start">
+                        <a href="#!" class="me-6 [&>svg]:h-4 [&>svg]:w-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 488 512">
+                                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+                                <path
+                                    d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z" />
+                            </svg>
+                        </a>
+                      
+                    </p>
+                    <p class="flex items-center justify-center md:justify-start">
+                        <a href="#!" class="me-6 [&>svg]:h-4 [&>svg]:w-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 448 512">
+                                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+                                <path
+                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                            </svg>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!--Copyright section-->
+        <div class="bg-black/5 p-6 text-center">
+            <span>© 2024 Copyright:</span>
+            <a class="font-semibold" href="https://tw-elements.com/"> Adhunik WoodPecker</a>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/bundled/locomotive-scroll.min.js"></script>
+    <script>
+        (function () {
+            const locomotiveScroll = new LocomotiveScroll();
+        })();
+    </script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 3500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+    <script>
+
+        function homepageAnimation() {
+
+            gsap.set(".slidesm", {
+                scale: 5,
+            })
+            var tl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: ".home",
+                    start: "top top",
+                    end: "bottom top",
+                    pin: true,
+
+                    scrub: 1,
+                },
+            })
+            tl.to(".vdodiv", {
+                '--clip': "0%",
+                ease: Power2,
+
+            }, "a")
+
+            tl.to(".slidesm", {
+                scale: 1,
+                ease: Power2,
+
+            }, "a")
+
+            tl.to(".lft", {
+                xPercent: -30,
+                stagger: .03,
+                ease: Power4,
+
+            }, 'b')
+            tl.to(".rgt", {
+                xPercent: 30,
+                stagger: .03,
+                ease: Power4,
+
+            }, 'b')
+
+
+        }
+        homepageAnimation()
+
+        gsap.to(".slide", {
+            scrollTrigger: {
+                trigger: ".real",
+                start: "top 20%", // Adjust the percentage value as needed
+                end: "top 40%",
+                markers: false,
+            },
+            xPercent: -200,
+            ease: Power4
+        })
+
+        document.querySelectorAll('.section').forEach(function (e) {
+            ScrollTrigger.create({
+                trigger: e,
+                start: "top 50%",
+                end: "top 50%",
+                markers: false,
+                onEnter: function () {
+                    document.body.setAttribute('theme', e.dataset.color);
+                },
+                onEnterBack: function () {
+                    document.body.setAttribute('theme', e.dataset.color);
+                }
+            });
+        });
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>
